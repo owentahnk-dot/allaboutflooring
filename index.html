@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All About Flooring NH | Flooring at Its Finest | Derry, NH</title>
+  <meta name="description" content="Southern New Hampshire's premier flooring contractor. Hardwood, tile, LVP & refinishing. Based in Derry, NH. Call (603) 339-5846 for a free estimate.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:   '#071D6B',
+            royal:  '#0B2FA5',
+            cobalt: '#1F54D8',
+            ice:    '#E8EEFF',
+            frost:  '#F2F6FF',
+            silver: '#8AABC4',
+            chrome: '#C4D4EC',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { font-family: 'Work Sans', sans-serif; }
+    h1,h2,h3,h4,h5,nav a,.font-heading { font-family: 'Montserrat', sans-serif; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block; vertical-align: middle; line-height: 1;
+    }
+    .icon-fill { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .icon-bold { font-variation-settings: 'FILL' 0, 'wght' 600, 'GRAD' 0, 'opsz' 24; }
+    .hero-gradient { background: linear-gradient(135deg, rgba(7,29,107,0.92) 0%, rgba(11,47,165,0.75) 60%, rgba(7,29,107,0.88) 100%); }
+    .section-divider { width: 56px; height: 4px; background: #0B2FA5; border-radius: 2px; }
+    .card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .card-hover:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(11,47,165,0.14); }
+    .service-img { transition: transform 0.5s ease; }
+    .service-card:hover .service-img { transform: scale(1.06); }
+    /* Image clarity boost */
+    img { -webkit-backface-visibility: hidden; transform: translateZ(0); }
+    .crisp { filter: brightness(1.08) contrast(1.10) saturate(1.12); }
+    .crisp-hero { filter: brightness(1.12) contrast(1.08) saturate(1.05); }
+    input:focus, textarea:focus, select:focus { outline: none; box-shadow: 0 0 0 2px #0B2FA5; }
+    @media (max-width: 768px) {
+      #mobile-menu { transition: max-height 0.3s ease; }
+    }
+    /* Service Modal */
+    #service-modal { transition: opacity 0.25s ease; }
+    #service-modal.hidden { opacity: 0; pointer-events: none; }
+    #service-modal:not(.hidden) { opacity: 1; }
+    #modal-img { transition: transform 0.35s ease; }
+    #modal-content { transition: transform 0.3s ease, opacity 0.3s ease; }
+    #service-modal.hidden #modal-content { transform: translateY(24px); opacity: 0; }
+    #service-modal:not(.hidden) #modal-content { transform: translateY(0); opacity: 1; }
+  </style>
+</head>
+<body class="bg-white text-gray-700 min-h-screen flex flex-col">
+
+  <!-- NAVBAR -->
+  <nav class="bg-white sticky top-0 z-50 border-b border-chrome" style="box-shadow: 0 1px 4px rgba(7,29,107,0.10);">
+    <div class="max-w-[1280px] mx-auto px-6 py-3 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex-shrink-0">
+        <img src="logo.png" alt="All About Flooring NH" class="h-14 w-auto">
+      </a>
+      <div class="hidden md:flex items-center gap-7">
+        <a href="index.html#services" class="text-gray-600 hover:text-royal font-semibold text-sm tracking-wide transition-colors">Services</a>
+        <a href="service-area.html" class="text-gray-600 hover:text-royal font-semibold text-sm tracking-wide transition-colors">Service Area</a>
+        <a href="reviews.html" class="text-gray-600 hover:text-royal font-semibold text-sm tracking-wide transition-colors">Reviews</a>
+        <a href="contact.html" class="text-gray-600 hover:text-royal font-semibold text-sm tracking-wide transition-colors">Contact</a>
+      </div>
+      <div class="hidden md:flex items-center gap-4">
+        <a href="tel:6033395846" class="text-royal font-bold text-sm flex items-center gap-1.5">
+          <span class="material-symbols-outlined icon-fill text-lg text-royal">call</span>
+          (603) 339-5846
+        </a>
+        <a href="contact.html" class="bg-royal text-white font-bold text-sm px-5 py-2.5 rounded hover:bg-navy transition-colors whitespace-nowrap">
+          Free Estimate
+        </a>
+      </div>
+      <button id="menu-toggle" class="md:hidden p-2 text-royal" aria-label="Open menu">
+        <span class="material-symbols-outlined icon-bold text-2xl">menu</span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-chrome bg-frost">
+      <div class="px-6 py-4 flex flex-col gap-4">
+        <a href="index.html#services" class="text-gray-700 font-semibold py-2 border-b border-chrome">Services</a>
+        <a href="service-area.html" class="text-gray-700 font-semibold py-2 border-b border-chrome">Service Area</a>
+        <a href="reviews.html" class="text-gray-700 font-semibold py-2 border-b border-chrome">Reviews</a>
+        <a href="contact.html" class="text-gray-700 font-semibold py-2 border-b border-chrome">Contact</a>
+        <a href="tel:6033395846" class="text-royal font-bold py-2 flex items-center gap-2">
+          <span class="material-symbols-outlined icon-fill">call</span>(603) 339-5846
+        </a>
+        <a href="contact.html" class="bg-royal text-white font-bold px-6 py-3 rounded text-center mt-1">Get Free Estimate</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow">
+
+    <!-- HERO -->
+    <section class="relative min-h-[90vh] flex items-center">
+      <img
+        src="images/fulllivingroom.webp"
+        alt="Beautiful hardwood floors by All About Flooring NH"
+        class="absolute inset-0 w-full h-full object-cover crisp-hero"
+        style="object-position: center 45%;"
+      >
+      <div class="absolute inset-0 hero-gradient"></div>
+      <div class="relative z-10 max-w-[1280px] mx-auto px-6 py-20 w-full">
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2 mb-6 rounded-full px-4 py-2 text-sm font-semibold tracking-wider uppercase" style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25); color: #C4D4EC;">
+            <span class="material-symbols-outlined icon-fill text-sm" style="color: #8AABC4;">location_on</span>
+            Based in Derry · Serving Southern NH
+          </div>
+          <h1 class="text-white font-black leading-tight mb-6" style="font-size: clamp(2.5rem,6vw,4.5rem); letter-spacing: -0.025em; font-family: Montserrat;">
+            Floors Done Right.<br>First Time.
+          </h1>
+          <p class="text-lg md:text-xl mb-10 leading-relaxed max-w-2xl" style="color: #C4D4EC;">
+            Hardwood, tile, luxury vinyl &amp; refinishing — expertly installed by Southern New Hampshire's most trusted local flooring crew.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="contact.html" class="bg-white text-royal font-bold px-8 py-4 rounded text-base hover:bg-ice transition-colors text-center shadow-lg">
+              Get Free Estimate
+            </a>
+            <a href="tel:6033395846" class="border-2 border-white text-white font-bold px-8 py-4 rounded text-base hover:bg-white/10 transition-colors flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined icon-fill text-xl">call</span>
+              (603) 339-5846
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Scroll hint -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2" style="color: rgba(196,212,236,0.7);">
+        <span class="text-xs font-label uppercase tracking-widest">Explore</span>
+        <span class="material-symbols-outlined text-2xl animate-bounce">expand_more</span>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="bg-navy py-6 px-6">
+      <div class="max-w-[1280px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <span class="material-symbols-outlined icon-fill text-3xl text-silver">home_work</span>
+          <div class="text-left">
+            <p class="text-white font-bold text-sm">Locally Owned</p>
+            <p class="text-silver text-xs">Derry, NH Since 2010</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <span class="material-symbols-outlined icon-fill text-3xl text-silver">verified</span>
+          <div class="text-left">
+            <p class="text-white font-bold text-sm">Fully Licensed</p>
+            <p class="text-silver text-xs">Licensed &amp; Insured NH</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <span class="material-symbols-outlined icon-fill text-3xl text-silver">handshake</span>
+          <div class="text-left">
+            <p class="text-white font-bold text-sm">Honest Pricing</p>
+            <p class="text-silver text-xs">No Hidden Fees</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <span class="material-symbols-outlined icon-fill text-3xl text-silver">event_available</span>
+          <div class="text-left">
+            <p class="text-white font-bold text-sm">Free Estimates</p>
+            <p class="text-silver text-xs">We Come to You</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-20 bg-white">
+      <div class="max-w-[1280px] mx-auto px-6">
+        <div class="text-center mb-14">
+          <p class="text-royal font-bold text-sm uppercase tracking-widest mb-3">What We Do</p>
+          <h2 class="text-gray-900 font-black text-3xl md:text-4xl mb-4" style="font-family: Montserrat;">Expert Flooring Services</h2>
+          <div class="section-divider mx-auto mb-4"></div>
+          <p class="text-gray-500 max-w-xl mx-auto">From classic hardwood to waterproof luxury vinyl — we install every flooring type with precision and pride.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Hardwood -->
+          <div class="service-card bg-white rounded-lg border border-chrome overflow-hidden card-hover cursor-pointer" onclick="openModal('hardwood')">
+            <div class="h-44 overflow-hidden relative">
+              <img src="images/finishedbasement.webp"
+                   alt="Hardwood floor installation by All About Flooring NH" class="service-img w-full h-full object-cover crisp" style="object-position: center 50%;">
+              <div class="absolute top-0 left-0 w-full h-1 bg-royal"></div>
+              <div class="absolute top-4 left-4 bg-navy/80 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Hardwood</div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-black text-gray-900 text-xl mb-2" style="font-family: Montserrat;">Hardwood Installation</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">Classic, durable, and timeless. Expert installation of solid and engineered hardwood floors with flawless finish.</p>
+              <span class="text-royal font-bold text-sm flex items-center gap-1">
+                Learn More <span class="material-symbols-outlined text-base">arrow_forward</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Tile & Stone -->
+          <div class="service-card bg-white rounded-lg border border-chrome overflow-hidden card-hover cursor-pointer" onclick="openModal('tile')">
+            <div class="h-44 overflow-hidden relative">
+              <img src="images/goodpicturetile.webp"
+                   alt="Tile and stone installation by All About Flooring NH" class="service-img w-full h-full object-cover crisp" style="object-position: center 40%;">
+              <div class="absolute top-0 left-0 w-full h-1 bg-royal"></div>
+              <div class="absolute top-4 left-4 bg-navy/80 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Tile &amp; Stone</div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-black text-gray-900 text-xl mb-2" style="font-family: Montserrat;">Tile &amp; Stone</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">Precision installation for kitchens, bathrooms &amp; high-traffic areas — perfectly plumb grout lines every time.</p>
+              <span class="text-royal font-bold text-sm flex items-center gap-1">
+                Learn More <span class="material-symbols-outlined text-base">arrow_forward</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- LVP -->
+          <div class="service-card bg-white rounded-lg border border-chrome overflow-hidden card-hover cursor-pointer" onclick="openModal('lvp')">
+            <div class="h-44 overflow-hidden relative">
+              <img src="images/clearervinyl.webp"
+                   alt="Luxury vinyl plank flooring by All About Flooring NH" class="service-img w-full h-full object-cover crisp" style="object-position: center 30%;">
+              <div class="absolute top-0 left-0 w-full h-1 bg-royal"></div>
+              <div class="absolute top-4 left-4 bg-navy/80 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Luxury Vinyl</div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-black text-gray-900 text-xl mb-2" style="font-family: Montserrat;">Luxury Vinyl (LVP/LVT)</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">100% waterproof, beautiful, and resilient. Perfect for kitchens, basements &amp; high-moisture spaces.</p>
+              <span class="text-royal font-bold text-sm flex items-center gap-1">
+                Learn More <span class="material-symbols-outlined text-base">arrow_forward</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Refinishing -->
+          <div class="service-card bg-white rounded-lg border border-chrome overflow-hidden card-hover cursor-pointer" onclick="openModal('refinishing')">
+            <div class="h-44 overflow-hidden relative">
+              <img src="images/kitchen.webp"
+                   alt="Hardwood floor refinishing by All About Flooring NH" class="service-img w-full h-full object-cover crisp" style="object-position: center 50%;">
+              <div class="absolute top-0 left-0 w-full h-1 bg-royal"></div>
+              <div class="absolute top-4 left-4 bg-navy/80 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Refinishing</div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-black text-gray-900 text-xl mb-2" style="font-family: Montserrat;">Floor Refinishing</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">Restore dull, scratched hardwood to like-new condition. Sanding, staining &amp; re-coating at a fraction of replacement cost.</p>
+              <span class="text-royal font-bold text-sm flex items-center gap-1">
+                Learn More <span class="material-symbols-outlined text-base">arrow_forward</span>
+              </span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="py-20 bg-frost">
+      <div class="max-w-[1280px] mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <p class="text-royal font-bold text-sm uppercase tracking-widest mb-3">Why All About Flooring?</p>
+            <h2 class="text-gray-900 font-black text-3xl md:text-4xl mb-4" style="font-family: Montserrat;">Southern NH Homeowners Trust Us</h2>
+            <div class="section-divider mb-8"></div>
+            <div class="space-y-5">
+              <div class="flex gap-4 items-start">
+                <div class="w-10 h-10 bg-royal rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span class="material-symbols-outlined icon-fill text-white text-lg">groups</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 mb-1" style="font-family: Montserrat;">Owner-Led Crews</h4>
+                  <p class="text-gray-500 text-sm leading-relaxed">The owner is on every job. No franchises, no subcontracting to whoever shows up. You get our best every time.</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <div class="w-10 h-10 bg-royal rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span class="material-symbols-outlined icon-fill text-white text-lg">request_quote</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 mb-1" style="font-family: Montserrat;">Upfront, Honest Pricing</h4>
+                  <p class="text-gray-500 text-sm leading-relaxed">We quote it, we stick to it. No change-order surprises at the end of your project.</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <div class="w-10 h-10 bg-royal rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span class="material-symbols-outlined icon-fill text-white text-lg">cleaning_services</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 mb-1" style="font-family: Montserrat;">Spotless Job Sites</h4>
+                  <p class="text-gray-500 text-sm leading-relaxed">We protect your furniture, contain dust, and leave your home cleaner than we found it.</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <div class="w-10 h-10 bg-royal rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span class="material-symbols-outlined icon-fill text-white text-lg">workspace_premium</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 mb-1" style="font-family: Montserrat;">Workmanship Guarantee</h4>
+                  <p class="text-gray-500 text-sm leading-relaxed">Every installation is backed by our craftsmanship warranty. If it's not right, we make it right.</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <div class="w-10 h-10 bg-royal rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span class="material-symbols-outlined icon-fill text-white text-lg">local_shipping</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 mb-1" style="font-family: Montserrat;">Mobile Showroom</h4>
+                  <p class="text-gray-500 text-sm leading-relaxed">We bring samples to your home so you can see how they look in your actual lighting before you commit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="rounded-xl overflow-hidden shadow-2xl" style="box-shadow: 0 20px 60px rgba(11,47,165,0.2);">
+              <img src="images/truckworking.webp"
+                   alt="All About Flooring NH truck and team"
+                   class="w-full h-[500px] object-cover crisp"
+                   style="object-position: center 60%;">
+            </div>
+            <!-- Floating stat card -->
+            <div class="absolute -bottom-6 -left-6 bg-white rounded-xl p-5 shadow-xl border border-chrome hidden lg:block">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-royal rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span class="material-symbols-outlined icon-fill text-white text-2xl">star</span>
+                </div>
+                <div>
+                  <p class="font-black text-gray-900 text-2xl" style="font-family: Montserrat;">4.9★</p>
+                  <p class="text-gray-500 text-xs">Average Google Rating</p>
+                </div>
+              </div>
+            </div>
+            <div class="absolute -top-6 -right-6 bg-royal rounded-xl p-5 shadow-xl hidden lg:block">
+              <p class="font-black text-white text-3xl" style="font-family: Montserrat;">500+</p>
+              <p class="text-chrome text-xs font-semibold">Floors Installed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="py-20 bg-navy">
+      <div class="max-w-[1280px] mx-auto px-6">
+        <div class="text-center mb-12">
+          <p class="text-silver font-bold text-sm uppercase tracking-widest mb-3">What Customers Say</p>
+          <h2 class="text-white font-black text-3xl md:text-4xl" style="font-family: Montserrat;">Your Neighbors Love Us</h2>
+          <div class="w-14 h-1 bg-cobalt mx-auto mt-4 rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white/8 border border-white/15 rounded-xl p-7 backdrop-blur-sm">
+            <div class="flex text-yellow-400 mb-4 text-lg">★★★★★</div>
+            <p class="text-chrome text-sm leading-relaxed mb-6">"All About Flooring completely transformed our living room. The hardwood installation was immaculate — they were clean, on time, and professional. Our floors look incredible."</p>
+            <div class="flex items-center gap-3 border-t border-white/10 pt-5">
+              <div class="w-10 h-10 bg-cobalt rounded-full flex items-center justify-center">
+                <span class="material-symbols-outlined icon-fill text-white text-lg">person</span>
+              </div>
+              <div>
+                <p class="text-white font-bold text-sm" style="font-family: Montserrat;">Sarah J.</p>
+                <p class="text-silver text-xs">Bedford, NH · Hardwood</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white/8 border border-white/15 rounded-xl p-7 backdrop-blur-sm">
+            <div class="flex text-yellow-400 mb-4 text-lg">★★★★★</div>
+            <p class="text-chrome text-sm leading-relaxed mb-6">"Used them for LVP in our kitchen and bathrooms. Fast, fair price, and the result is stunning. Would absolutely hire them again. Highly recommend to anyone in the Manchester area."</p>
+            <div class="flex items-center gap-3 border-t border-white/10 pt-5">
+              <div class="w-10 h-10 bg-cobalt rounded-full flex items-center justify-center">
+                <span class="material-symbols-outlined icon-fill text-white text-lg">person</span>
+              </div>
+              <div>
+                <p class="text-white font-bold text-sm" style="font-family: Montserrat;">Mike T.</p>
+                <p class="text-silver text-xs">Nashua, NH · LVP</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white/8 border border-white/15 rounded-xl p-7 backdrop-blur-sm">
+            <div class="flex text-yellow-400 mb-4 text-lg">★★★★★</div>
+            <p class="text-chrome text-sm leading-relaxed mb-6">"Our old hardwood floors were a disaster. They refinished them and they look like a brand new house. Saved us thousands over replacement. Don't look anywhere else."</p>
+            <div class="flex items-center gap-3 border-t border-white/10 pt-5">
+              <div class="w-10 h-10 bg-cobalt rounded-full flex items-center justify-center">
+                <span class="material-symbols-outlined icon-fill text-white text-lg">person</span>
+              </div>
+              <div>
+                <p class="text-white font-bold text-sm" style="font-family: Montserrat;">Lisa R.</p>
+                <p class="text-silver text-xs">Londonderry, NH · Refinishing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-10">
+          <a href="reviews.html" class="border-2 border-white/30 text-white font-bold px-6 py-3 rounded hover:bg-white/10 transition-colors inline-flex items-center gap-2">
+            Read More Reviews <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-20 bg-ice">
+      <div class="max-w-[1280px] mx-auto px-6 text-center">
+        <h2 class="text-gray-900 font-black text-3xl md:text-5xl mb-4 leading-tight" style="font-family: Montserrat;">Ready to Transform Your Floors?</h2>
+        <p class="text-gray-500 text-lg mb-10 max-w-xl mx-auto">Get a free, no-obligation estimate. We bring the showroom to you — compare samples in your own lighting.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="contact.html" class="bg-royal text-white font-bold px-10 py-4 rounded text-base hover:bg-navy transition-colors shadow-lg">
+            Get My Free Estimate
+          </a>
+          <a href="tel:6033395846" class="bg-white border-2 border-royal text-royal font-bold px-10 py-4 rounded text-base hover:bg-frost transition-colors flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined icon-fill">call</span>
+            (603) 339-5846
+          </a>
+        </div>
+        <p class="text-gray-400 text-sm mt-6">No pressure. No commitment. Just a conversation about your project.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy text-white pt-16 pb-8">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        <div class="md:col-span-2">
+          <img src="logo.png" alt="All About Flooring NH" class="h-16 w-auto mb-5">
+          <p class="text-silver text-sm leading-relaxed mb-5 max-w-xs">Southern New Hampshire's premier flooring contractor. Based in Derry — serving greater Manchester and beyond since 2010.</p>
+          <div class="space-y-2">
+            <a href="tel:6033395846" class="flex items-center gap-2 text-chrome font-semibold hover:text-white transition-colors">
+              <span class="material-symbols-outlined icon-fill text-lg text-silver">call</span>
+              (603) 339-5846
+            </a>
+            <a href="mailto:info@allaboutflooringnh.com" class="flex items-center gap-2 text-silver text-sm hover:text-white transition-colors">
+              <span class="material-symbols-outlined icon-fill text-base">mail</span>
+              info@allaboutflooringnh.com
+            </a>
+            <a href="https://www.google.com/maps/search/All+About+Flooring+Derry+NH" target="_blank" rel="noopener" class="flex items-center gap-2 text-silver text-sm hover:text-white transition-colors">
+              <span class="material-symbols-outlined icon-fill text-base">star</span>
+              See us on Google · 4.9★
+            </a>
+            <p class="flex items-start gap-2 text-silver text-sm">
+              <span class="material-symbols-outlined icon-fill text-base mt-0.5">location_on</span>
+              Derry, NH 03038 · Serving Southern NH
+            </p>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-bold text-white text-xs uppercase tracking-widest mb-5">Services</h4>
+          <ul class="space-y-3">
+            <li><a href="contact.html" class="text-silver text-sm hover:text-white transition-colors">Hardwood Installation</a></li>
+            <li><a href="contact.html" class="text-silver text-sm hover:text-white transition-colors">Tile &amp; Stone</a></li>
+            <li><a href="contact.html" class="text-silver text-sm hover:text-white transition-colors">Luxury Vinyl (LVP)</a></li>
+            <li><a href="contact.html" class="text-silver text-sm hover:text-white transition-colors">Floor Refinishing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-white text-xs uppercase tracking-widest mb-5">Company</h4>
+          <ul class="space-y-3">
+            <li><a href="reviews.html" class="text-silver text-sm hover:text-white transition-colors">Customer Reviews</a></li>
+            <li><a href="service-area.html" class="text-silver text-sm hover:text-white transition-colors">Service Area</a></li>
+            <li><a href="contact.html" class="text-silver text-sm hover:text-white transition-colors">Contact Us</a></li>
+            <li><a href="contact.html" class="text-silver text-sm hover:text-white transition-colors">Free Estimate</a></li>
+          </ul>
+          <div class="mt-6 p-4 bg-white/5 rounded-lg border border-white/10">
+            <p class="text-chrome text-xs font-bold mb-1">Hours</p>
+            <p class="text-silver text-xs">Mon–Fri: 7am – 5pm</p>
+            <p class="text-silver text-xs">Sat: 8am – 12pm</p>
+          </div>
+        </div>
+      </div>
+      <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
+        <p class="text-silver text-xs">© 2025 All About Flooring, LLC. Licensed &amp; Insured. All Rights Reserved.</p>
+        <p class="text-silver text-xs">Derry, NH · Serving Southern New Hampshire</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SERVICE MODAL -->
+  <div id="service-modal" class="hidden fixed inset-0 z-[999] flex items-center justify-center p-4 md:p-8" style="background: rgba(7,29,107,0.92); backdrop-filter: blur(6px);">
+    <div id="modal-content" class="relative bg-white rounded-2xl overflow-hidden w-full max-w-4xl max-h-[90vh] flex flex-col md:flex-row shadow-2xl">
+      <!-- Close button -->
+      <button onclick="closeModal()" class="absolute top-4 right-4 z-10 w-10 h-10 bg-navy/80 backdrop-blur-sm text-white rounded-full flex items-center justify-center hover:bg-navy transition-colors" aria-label="Close">
+        <span class="material-symbols-outlined text-xl">close</span>
+      </button>
+      <!-- Image panel -->
+      <div class="w-full md:w-1/2 h-56 md:h-auto flex-shrink-0 overflow-hidden">
+        <img id="modal-img" src="" alt="" class="w-full h-full object-cover crisp" style="min-height: 220px;">
+      </div>
+      <!-- Info panel -->
+      <div class="flex flex-col justify-between p-7 md:p-10 overflow-y-auto">
+        <div>
+          <div id="modal-badge" class="inline-block bg-ice text-royal text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-4"></div>
+          <h2 id="modal-title" class="font-black text-gray-900 text-2xl md:text-3xl mb-4 leading-tight" style="font-family: Montserrat;"></h2>
+          <div class="w-12 h-1 bg-royal rounded mb-5"></div>
+          <p id="modal-desc" class="text-gray-500 text-sm md:text-base leading-relaxed mb-6"></p>
+          <ul id="modal-bullets" class="space-y-2 mb-8"></ul>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="contact.html" class="bg-royal text-white font-bold px-6 py-3 rounded text-sm hover:bg-navy transition-colors text-center">
+            Get a Free Quote
+          </a>
+          <a href="tel:6033395846" class="border-2 border-royal text-royal font-bold px-6 py-3 rounded text-sm hover:bg-frost transition-colors flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined icon-fill text-base">call</span>
+            (603) 339-5846
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+    const services = {
+      hardwood: {
+        img: 'images/finishedbasement.webp',
+        imgPos: 'center 50%',
+        badge: 'Hardwood',
+        title: 'Hardwood Installation',
+        desc: 'Solid and engineered hardwood is the gold standard for lasting beauty and home value. We work with oak, maple, hickory, walnut, and more — handling everything from subfloor prep to final finish. Whether you want a classic warm natural tone or a rich dark stain, our crews nail, glue, or float every plank with precision.',
+        bullets: ['Solid & engineered hardwood', 'Site-finished & pre-finished options', 'Custom staining & species selection', 'Full subfloor prep & leveling included', 'Glue-down, nail-down & float methods']
+      },
+      tile: {
+        img: 'images/goodpicturetile.webp',
+        imgPos: 'center 40%',
+        badge: 'Tile & Stone',
+        title: 'Tile & Stone Installation',
+        desc: 'From polished porcelain to natural stone, we install tile in bathrooms, kitchens, entryways, and showers with laser-level accuracy. We specialize in large-format tile, subway tile, mosaic, and custom patterns — using proper cement board backer and waterproof membranes in wet areas for a result that lasts decades.',
+        bullets: ['Floors, walls & shower surrounds', 'Porcelain, ceramic, natural stone & mosaic', 'Large-format up to 24"×48"', 'Waterproof membrane in wet areas', 'Precision grout lines, every time']
+      },
+      lvp: {
+        img: 'images/clearervinyl.webp',
+        imgPos: 'center 30%',
+        badge: 'Luxury Vinyl',
+        title: 'Luxury Vinyl (LVP/LVT)',
+        desc: '100% waterproof luxury vinyl plank is the smart choice for kitchens, basements, bathrooms, and high-traffic areas. Modern LVP looks and feels like real wood or stone but stands up to pets, kids, and spills. We install click-lock and glue-down systems with seamless transitions between rooms.',
+        bullets: ['Completely waterproof — basements & baths', 'Scratch & dent resistant', 'Click-lock & glue-down systems', 'Dozens of wood & stone looks', 'Comfortable underfoot — quieter than hardwood']
+      },
+      carpet: {
+        img: 'images/finishedbasement.webp',
+        imgPos: 'center 40%',
+        badge: 'Carpet',
+        title: 'Carpet Installation',
+        desc: 'Carpet adds warmth, comfort, and sound-dampening that hard surfaces can\'t match — ideal for bedrooms, family rooms, stairs, and basements. We power-stretch every installation (never staple) for a smooth, wrinkle-free finish and handle all furniture moving, tack strips, and high-quality pad selection.',
+        bullets: ['Plush, textured & berber styles', 'Power-stretched (wrinkle-free guarantee)', 'Premium pad selection included', 'Stairs, hallways & whole-home installs', 'Furniture moving available']
+      },
+      refinishing: {
+        img: 'images/kitchen.webp',
+        imgPos: 'center 50%',
+        badge: 'Refinishing',
+        title: 'Floor Refinishing',
+        desc: 'Don\'t replace dull, scratched, or dated hardwood — restore it. Our refinishing process sands down to bare wood, applies your choice of stain, and seals with multiple coats of professional-grade polyurethane. Dust-containment equipment keeps your home clean, and most floors are done in 2–3 days.',
+        bullets: ['Sanding, staining & re-coating', 'Custom stain color matching', 'Dust-containment system', 'Poly or oil-based finishes available', 'Fraction of replacement cost']
+      },
+      commercial: {
+        img: 'images/showsallservices.webp',
+        imgPos: 'center 50%',
+        badge: 'Commercial',
+        title: 'Commercial Flooring',
+        desc: 'We outfit offices, retail spaces, restaurants, gyms, and multi-unit residential buildings with commercial-grade flooring built for heavy traffic. We work around your schedule — including nights and weekends — to minimize downtime. All commercial work meets NH building codes and is backed by our workmanship guarantee.',
+        bullets: ['Offices, retail & restaurants', 'Commercial LVT, epoxy & tile', 'After-hours scheduling available', 'Multi-unit residential buildings', 'NH code compliant & fully insured']
+      }
+    };
+
+    function openModal(key) {
+      const s = services[key];
+      const modal = document.getElementById('service-modal');
+      document.getElementById('modal-img').src = s.img;
+      document.getElementById('modal-img').style.objectPosition = s.imgPos;
+      document.getElementById('modal-badge').textContent = s.badge;
+      document.getElementById('modal-title').textContent = s.title;
+      document.getElementById('modal-desc').textContent = s.desc;
+      const ul = document.getElementById('modal-bullets');
+      ul.innerHTML = s.bullets.map(b => `
+        <li class="flex items-start gap-2 text-sm text-gray-600">
+          <span class="material-symbols-outlined icon-fill text-royal text-base mt-0.5 flex-shrink-0">check_circle</span>
+          ${b}
+        </li>`).join('');
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('service-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('service-modal').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+</body>
+</html>

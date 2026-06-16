@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Free Estimate | All About Flooring NH</title>
+  <meta name="description" content="Contact All About Flooring NH for a free, no-obligation flooring estimate in Derry, Manchester, Nashua and all of Southern NH. Call (603) 339-5846.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:   '#071D6B',
+            royal:  '#0B2FA5',
+            cobalt: '#1F54D8',
+            ice:    '#E8EEFF',
+            frost:  '#F2F6FF',
+            silver: '#8AABC4',
+            chrome: '#C4D4EC',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { font-family: 'Work Sans', sans-serif; }
+    h1,h2,h3,h4 { font-family: 'Montserrat', sans-serif; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block; vertical-align: middle; line-height: 1;
+    }
+    .icon-fill { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .icon-bold { font-variation-settings: 'FILL' 0, 'wght' 600, 'GRAD' 0, 'opsz' 24; }
+    .section-divider { width: 56px; height: 4px; background: #0B2FA5; border-radius: 2px; }
+    input, textarea, select {
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: #0B2FA5;
+      box-shadow: 0 0 0 3px rgba(11,47,165,0.12);
+    }
+    .contact-info-card { transition: all 0.15s ease; }
+    .contact-info-card:hover { border-color: #0B2FA5; }
+  </style>
+</head>
+<body class="bg-white text-gray-700 min-h-screen flex flex-col">
+
+  <!-- NAVBAR -->
+  <nav class="bg-white sticky top-0 z-50 border-b border-chrome" style="box-shadow: 0 1px 4px rgba(7,29,107,0.10);">
+    <div class="max-w-[1280px] mx-auto px-6 py-3 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex-shrink-0">
+        <img src="logo.png" alt="All About Flooring NH" class="h-14 w-auto">
+      </a>
+      <div class="hidden md:flex items-center gap-7">
+        <a href="index.html#services" class="text-gray-600 hover:text-royal font-semibold text-sm tracking-wide transition-colors">Services</a>
+        <a href="service-area.html" class="text-gray-600 hover:text-royal font-semibold text-sm tracking-wide transition-colors">Service Area</a>
+        <a href="reviews.html" class="text-gray-600 hover:text-royal font-semibold text-sm tracking-wide transition-colors">Reviews</a>
+        <a href="contact.html" class="text-royal font-bold text-sm tracking-wide border-b-2 border-royal pb-0.5">Contact</a>
+      </div>
+      <div class="hidden md:flex items-center gap-4">
+        <a href="tel:6033395846" class="text-royal font-bold text-sm flex items-center gap-1.5">
+          <span class="material-symbols-outlined icon-fill text-lg">call</span>
+          (603) 339-5846
+        </a>
+        <a href="#estimate-form" class="bg-royal text-white font-bold text-sm px-5 py-2.5 rounded hover:bg-navy transition-colors whitespace-nowrap">
+          Free Estimate
+        </a>
+      </div>
+      <button id="menu-toggle" class="md:hidden p-2 text-royal" aria-label="Open menu">
+        <span class="material-symbols-outlined icon-bold text-2xl">menu</span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-chrome bg-frost">
+      <div class="px-6 py-4 flex flex-col gap-4">
+        <a href="index.html#services" class="text-gray-700 font-semibold py-2 border-b border-chrome">Services</a>
+        <a href="service-area.html" class="text-gray-700 font-semibold py-2 border-b border-chrome">Service Area</a>
+        <a href="reviews.html" class="text-gray-700 font-semibold py-2 border-b border-chrome">Reviews</a>
+        <a href="contact.html" class="text-royal font-bold py-2 border-b border-chrome">Contact</a>
+        <a href="tel:6033395846" class="text-royal font-bold py-2 flex items-center gap-2">
+          <span class="material-symbols-outlined icon-fill">call</span>(603) 339-5846
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow">
+
+    <!-- PAGE HEADER -->
+    <section class="py-14 bg-frost border-b border-chrome">
+      <div class="max-w-[1280px] mx-auto px-6">
+        <p class="text-royal font-bold text-sm uppercase tracking-widest mb-3">Get In Touch</p>
+        <h1 class="text-gray-900 font-black text-4xl md:text-5xl mb-4" style="letter-spacing: -0.02em;">Ready for New Floors? Let's Talk.</h1>
+        <div class="section-divider mb-5"></div>
+        <p class="text-gray-500 text-lg max-w-2xl">Whether you need a full installation or expert repairs, our team is ready to bring your vision to life. Fill out the form below or contact us directly.</p>
+      </div>
+    </section>
+
+    <!-- FORM + CONTACT INFO -->
+    <section class="py-16 bg-white" id="estimate-form">
+      <div class="max-w-[1280px] mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
+
+          <!-- FORM -->
+          <div class="lg:col-span-3">
+            <div class="bg-white rounded-2xl border border-chrome relative overflow-hidden" style="box-shadow: 0 4px 24px rgba(11,47,165,0.08);">
+              <div class="absolute top-0 left-0 w-full h-1 bg-royal"></div>
+              <div class="p-8 md:p-10">
+                <h2 class="font-black text-gray-900 text-2xl mb-2" style="font-family: Montserrat;">Request a Free Estimate</h2>
+                <p class="text-gray-400 text-sm mb-8">No pressure. No commitment. Just an honest conversation about your project.</p>
+
+                <form id="contact-form" class="space-y-5" onsubmit="handleSubmit(event)">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                      <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2" for="firstName">First Name *</label>
+                      <input type="text" id="firstName" name="firstName" placeholder="John" required
+                             class="w-full bg-frost border border-chrome rounded-lg px-4 py-3 text-gray-900 placeholder-gray-400 text-sm">
+                    </div>
+                    <div>
+                      <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2" for="lastName">Last Name *</label>
+                      <input type="text" id="lastName" name="lastName" placeholder="Doe" required
+                             class="w-full bg-frost border border-chrome rounded-lg px-4 py-3 text-gray-900 placeholder-gray-400 text-sm">
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2" for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required
+                           class="w-full bg-frost border border-chrome rounded-lg px-4 py-3 text-gray-900 placeholder-gray-400 text-sm">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2" for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(603) 555-1234" required
+                           class="w-full bg-frost border border-chrome rounded-lg px-4 py-3 text-gray-900 placeholder-gray-400 text-sm">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2" for="town">Town / City *</label>
+                    <input type="text" id="town" name="town" placeholder="e.g. Derry, Nashua, Manchester..." required
+                           class="w-full bg-frost border border-chrome rounded-lg px-4 py-3 text-gray-900 placeholder-gray-400 text-sm">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2" for="serviceType">Service Needed</label>
+                    <select id="serviceType" name="serviceType"
+                            class="w-full bg-frost border border-chrome rounded-lg px-4 py-3 text-gray-700 text-sm appearance-none">
+                      <option value="" disabled selected>Select a service...</option>
+                      <option value="hardwood">Hardwood Installation</option>
+                      <option value="tile">Tile &amp; Stone</option>
+                      <option value="lvp">Luxury Vinyl (LVP/LVT)</option>
+                      <option value="refinishing">Floor Refinishing</option>
+                      <option value="unsure">Not Sure — Need Advice</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2" for="squareFt">Approximate Square Footage</label>
+                    <select id="squareFt" name="squareFt"
+                            class="w-full bg-frost border border-chrome rounded-lg px-4 py-3 text-gray-700 text-sm appearance-none">
+                      <option value="" disabled selected>Select range...</option>
+                      <option value="under500">Under 500 sq ft</option>
+                      <option value="500-1000">500 – 1,000 sq ft</option>
+                      <option value="1000-2000">1,000 – 2,000 sq ft</option>
+                      <option value="2000-3500">2,000 – 3,500 sq ft</option>
+                      <option value="over3500">Over 3,500 sq ft</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2" for="message">Project Details</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us about your project — existing floor type, rooms involved, timeline, any concerns..."
+                              class="w-full bg-frost border border-chrome rounded-lg px-4 py-3 text-gray-900 placeholder-gray-400 text-sm resize-none"></textarea>
+                  </div>
+                  <button type="submit" class="w-full bg-royal text-white font-bold py-4 rounded-lg hover:bg-navy transition-colors text-sm uppercase tracking-wider" style="font-family: 'IBM Plex Sans';">
+                    Submit My Request
+                  </button>
+                </form>
+
+                <!-- Success message (hidden by default) -->
+                <div id="success-msg" class="hidden text-center py-12">
+                  <span class="material-symbols-outlined icon-fill text-royal text-5xl mb-4 block">check_circle</span>
+                  <h3 class="font-black text-gray-900 text-xl mb-2" style="font-family: Montserrat;">Request Received!</h3>
+                  <p class="text-gray-500 text-sm">We'll be in touch within 24 hours to schedule your free estimate.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTACT INFO + MAP -->
+          <div class="lg:col-span-2 flex flex-col gap-6">
+
+            <!-- Quick Contact Cards -->
+            <div>
+              <h3 class="font-black text-gray-900 text-xl mb-4" style="font-family: Montserrat;">Contact Us Directly</h3>
+              <div class="space-y-3">
+                <a href="tel:6033395846" class="contact-info-card flex items-center gap-4 p-4 bg-frost border border-chrome rounded-xl hover:text-royal transition-colors group">
+                  <div class="w-11 h-11 bg-royal rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined icon-fill text-white">call</span>
+                  </div>
+                  <div>
+                    <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-0.5">Phone</p>
+                    <p class="font-bold text-gray-900 group-hover:text-royal">(603) 339-5846</p>
+                  </div>
+                </a>
+                <a href="mailto:info@allaboutflooringnh.com" class="contact-info-card flex items-center gap-4 p-4 bg-frost border border-chrome rounded-xl hover:text-royal transition-colors group">
+                  <div class="w-11 h-11 bg-royal rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined icon-fill text-white">mail</span>
+                  </div>
+                  <div>
+                    <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-0.5">Email</p>
+                    <p class="font-bold text-gray-900 group-hover:text-royal text-sm">info@allaboutflooringnh.com</p>
+                  </div>
+                </a>
+                <div class="contact-info-card flex items-center gap-4 p-4 bg-frost border border-chrome rounded-xl">
+                  <div class="w-11 h-11 bg-royal rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined icon-fill text-white">location_on</span>
+                  </div>
+                  <div>
+                    <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-0.5">Location</p>
+                    <p class="font-bold text-gray-900 text-sm">Derry, NH 03038</p>
+                    <p class="text-gray-400 text-xs">Serving all of Southern NH</p>
+                  </div>
+                </div>
+                <div class="contact-info-card flex items-center gap-4 p-4 bg-frost border border-chrome rounded-xl">
+                  <div class="w-11 h-11 bg-royal rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined icon-fill text-white">schedule</span>
+                  </div>
+                  <div>
+                    <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-0.5">Hours</p>
+                    <p class="font-bold text-gray-900 text-sm">Mon–Fri: 7am – 5pm</p>
+                    <p class="text-gray-500 text-sm">Sat: 8am – 12pm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trust indicators -->
+            <div class="bg-ice rounded-xl p-5 border border-chrome">
+              <h4 class="font-bold text-gray-900 text-sm mb-4" style="font-family: Montserrat;">Why Homeowners Choose Us</h4>
+              <ul class="space-y-2.5">
+                <li class="flex items-center gap-2 text-sm text-gray-600">
+                  <span class="material-symbols-outlined icon-fill text-royal text-base">check_circle</span>
+                  Free, no-obligation estimates
+                </li>
+                <li class="flex items-center gap-2 text-sm text-gray-600">
+                  <span class="material-symbols-outlined icon-fill text-royal text-base">check_circle</span>
+                  Licensed &amp; insured in NH
+                </li>
+                <li class="flex items-center gap-2 text-sm text-gray-600">
+                  <span class="material-symbols-outlined icon-fill text-royal text-base">check_circle</span>
+                  Owner on every job
+                </li>
+                <li class="flex items-center gap-2 text-sm text-gray-600">
+                  <span class="material-symbols-outlined icon-fill text-royal text-base">check_circle</span>
+                  We bring samples to your home
+                </li>
+                <li class="flex items-center gap-2 text-sm text-gray-600">
+                  <span class="material-symbols-outlined icon-fill text-royal text-base">check_circle</span>
+                  Workmanship guaranteed
+                </li>
+                <li class="flex items-center gap-2 text-sm text-gray-600">
+                  <span class="material-symbols-outlined icon-fill text-royal text-base">check_circle</span>
+                  4.9★ Google rating
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM CTA BAR -->
+    <section class="py-10 bg-navy">
+      <div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <p class="text-white font-black text-xl" style="font-family: Montserrat;">Prefer to call? We're standing by.</p>
+          <p class="text-silver text-sm">Mon–Fri 7am–5pm · Sat 8am–12pm</p>
+        </div>
+        <a href="tel:6033395846" class="bg-white text-royal font-bold px-10 py-4 rounded text-base hover:bg-ice transition-colors flex items-center gap-3 whitespace-nowrap">
+          <span class="material-symbols-outlined icon-fill text-xl">call</span>
+          (603) 339-5846
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy text-white pt-16 pb-8">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        <div class="md:col-span-2">
+          <img src="logo.png" alt="All About Flooring NH" class="h-16 w-auto mb-5">
+          <p class="text-silver text-sm leading-relaxed mb-5 max-w-xs">Southern New Hampshire's premier flooring contractor. Based in Derry — serving greater Manchester and beyond since 2010.</p>
+          <a href="tel:6033395846" class="flex items-center gap-2 text-chrome font-semibold hover:text-white transition-colors">
+            <span class="material-symbols-outlined icon-fill text-lg text-silver">call</span>
+            (603) 339-5846
+          </a>
+        </div>
+        <div>
+          <h4 class="font-bold text-white text-xs uppercase tracking-widest mb-5">Services</h4>
+          <ul class="space-y-3">
+            <li><a href="contact.html" class="text-silver text-sm hover:text-white transition-colors">Hardwood Installation</a></li>
+            <li><a href="contact.html" class="text-silver text-sm hover:text-white transition-colors">Tile &amp; Stone</a></li>
+            <li><a href="contact.html" class="text-silver text-sm hover:text-white transition-colors">Luxury Vinyl (LVP)</a></li>
+            <li><a href="contact.html" class="text-silver text-sm hover:text-white transition-colors">Carpet</a></li>
+            <li><a href="contact.html" class="text-silver text-sm hover:text-white transition-colors">Floor Refinishing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-white text-xs uppercase tracking-widest mb-5">Company</h4>
+          <ul class="space-y-3">
+            <li><a href="reviews.html" class="text-silver text-sm hover:text-white transition-colors">Customer Reviews</a></li>
+            <li><a href="service-area.html" class="text-silver text-sm hover:text-white transition-colors">Service Area</a></li>
+            <li><a href="contact.html" class="text-silver text-sm hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
+        <p class="text-silver text-xs">© 2025 All About Flooring, LLC. Licensed &amp; Insured. All Rights Reserved.</p>
+        <p class="text-silver text-xs">Derry, NH · Serving Southern New Hampshire</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('contact-form').classList.add('hidden');
+      document.getElementById('success-msg').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>

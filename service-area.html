@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Area | All About Flooring NH | Southern NH Flooring</title>
+  <meta name="description" content="All About Flooring NH serves Derry, Londonderry, Windham, Salem, Nashua, Manchester and all of Southern New Hampshire.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:   '#071D6B',
+            royal:  '#0B2FA5',
+            cobalt: '#1F54D8',
+            ice:    '#E8EEFF',
+            frost:  '#F2F6FF',
+            silver: '#8AABC4',
+            chrome: '#C4D4EC',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { font-family: 'Work Sans', sans-serif; }
+    h1,h2,h3,h4 { font-family: 'Montserrat', sans-serif; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block; vertical-align: middle; line-height: 1;
+    }
+    .icon-fill { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .icon-bold { font-variation-settings: 'FILL' 0, 'wght' 600, 'GRAD' 0, 'opsz' 24; }
+    .section-divider { width: 56px; height: 4px; background: #0B2FA5; border-radius: 2px; }
+    .town-card { transition: all 0.15s ease; }
+    .town-card:hover { border-color: #0B2FA5; box-shadow: 0 4px 12px rgba(11,47,165,0.1); transform: translateY(-1px); }
+  </style>
+</head>
+<body class="bg-white text-gray-700 min-h-screen flex flex-col">
+
+  <!-- NAVBAR -->
+  <nav class="bg-white sticky top-0 z-50 border-b border-chrome" style="box-shadow: 0 1px 4px rgba(7,29,107,0.10);">
+    <div class="max-w-[1280px] mx-auto px-6 py-3 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex-shrink-0">
+        <img src="logo.png" alt="All About Flooring NH" class="h-14 w-auto">
+      </a>
+      <div class="hidden md:flex items-center gap-7">
+        <a href="index.html#services" class="text-gray-600 hover:text-royal font-semibold text-sm tracking-wide transition-colors">Services</a>
+        <a href="service-area.html" class="text-royal font-bold text-sm tracking-wide border-b-2 border-royal pb-0.5">Service Area</a>
+        <a href="reviews.html" class="text-gray-600 hover:text-royal font-semibold text-sm tracking-wide transition-colors">Reviews</a>
+        <a href="contact.html" class="text-gray-600 hover:text-royal font-semibold text-sm tracking-wide transition-colors">Contact</a>
+      </div>
+      <div class="hidden md:flex items-center gap-4">
+        <a href="tel:6033395846" class="text-royal font-bold text-sm flex items-center gap-1.5">
+          <span class="material-symbols-outlined icon-fill text-lg">call</span>
+          (603) 339-5846
+        </a>
+        <a href="contact.html" class="bg-royal text-white font-bold text-sm px-5 py-2.5 rounded hover:bg-navy transition-colors whitespace-nowrap">
+          Free Estimate
+        </a>
+      </div>
+      <button id="menu-toggle" class="md:hidden p-2 text-royal" aria-label="Open menu">
+        <span class="material-symbols-outlined icon-bold text-2xl">menu</span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-chrome bg-frost">
+      <div class="px-6 py-4 flex flex-col gap-4">
+        <a href="index.html#services" class="text-gray-700 font-semibold py-2 border-b border-chrome">Services</a>
+        <a href="service-area.html" class="text-royal font-bold py-2 border-b border-chrome">Service Area</a>
+        <a href="reviews.html" class="text-gray-700 font-semibold py-2 border-b border-chrome">Reviews</a>
+        <a href="contact.html" class="text-gray-700 font-semibold py-2 border-b border-chrome">Contact</a>
+        <a href="tel:6033395846" class="text-royal font-bold py-2 flex items-center gap-2">
+          <span class="material-symbols-outlined icon-fill">call</span>(603) 339-5846
+        </a>
+        <a href="contact.html" class="bg-royal text-white font-bold px-6 py-3 rounded text-center mt-1">Get Free Estimate</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow">
+
+    <!-- HERO -->
+    <section class="py-16 md:py-24 bg-frost border-b border-chrome">
+      <div class="max-w-[1280px] mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <span class="inline-block bg-ice text-royal font-bold text-xs uppercase tracking-widest px-3 py-1.5 rounded-full mb-4 border border-chrome">Service Area</span>
+            <h1 class="text-gray-900 font-black text-4xl md:text-5xl mb-5 leading-tight" style="letter-spacing: -0.02em;">Flooring Services Across Southern New Hampshire</h1>
+            <div class="section-divider mb-6"></div>
+            <p class="text-gray-500 text-lg leading-relaxed mb-8">Based in Derry, we bring our mobile showroom and expert installation crew directly to your door. No need to visit a showroom — we come to you.</p>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-white rounded-lg p-4 border border-chrome">
+                <p class="text-royal font-black text-2xl" style="font-family: Montserrat;">12+</p>
+                <p class="text-gray-400 text-sm">Towns Served</p>
+              </div>
+              <div class="bg-white rounded-lg p-4 border border-chrome">
+                <p class="text-royal font-black text-2xl" style="font-family: Montserrat;">30 mi</p>
+                <p class="text-gray-400 text-sm">Service Radius</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="rounded-2xl overflow-hidden border-4 border-chrome shadow-xl" style="height: 380px; position: relative;">
+              <!-- Live Google Maps embed centered on Derry, NH -->
+              <iframe
+                src="https://maps.google.com/maps?q=derry,nh&t=&z=9&ie=UTF8&iwloc=&output=embed"
+                class="w-full h-full"
+                style="border:0;"
+                loading="lazy"
+                title="All About Flooring NH Service Area Map"
+              ></iframe>
+              <!-- Service radius circle overlay -->
+              <div class="absolute inset-0 pointer-events-none">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Soft fill -->
+                  <ellipse cx="50%" cy="50%" rx="34%" ry="41%"
+                    fill="rgba(11,47,165,0.08)"/>
+                  <!-- Dashed border circle -->
+                  <ellipse cx="50%" cy="50%" rx="34%" ry="41%"
+                    fill="none"
+                    stroke="#0B2FA5"
+                    stroke-width="2.5"
+                    stroke-dasharray="12 6"
+                    stroke-linecap="round"/>
+                  <!-- Derry HQ dot -->
+                  <circle cx="50%" cy="50%" r="7" fill="#071D6B" stroke="white" stroke-width="2.5"/>
+                </svg>
+              </div>
+              <!-- Radius label badge -->
+              <div class="absolute top-3 left-3 pointer-events-none">
+                <span class="inline-flex items-center gap-1.5 bg-royal text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                  <svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="3 2"/></svg>
+                  ~30 mi service radius
+                </span>
+              </div>
+            </div>
+            <!-- Pin Badge -->
+            <div class="absolute bottom-4 right-4 bg-white rounded-xl px-4 py-3 shadow-lg border border-chrome flex items-center gap-2">
+              <span class="material-symbols-outlined icon-fill text-royal text-xl">location_on</span>
+              <div>
+                <p class="font-bold text-gray-900 text-sm">HQ: Derry, NH</p>
+                <p class="text-gray-400 text-xs">03038</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOWNS WE SERVE -->
+    <section class="py-20 bg-white">
+      <div class="max-w-[1280px] mx-auto px-6">
+        <div class="text-center mb-12">
+          <p class="text-royal font-bold text-sm uppercase tracking-widest mb-3">Coverage Area</p>
+          <h2 class="text-gray-900 font-black text-3xl md:text-4xl mb-4" style="font-family: Montserrat;">Towns We Service</h2>
+          <div class="section-divider mx-auto mb-4"></div>
+          <p class="text-gray-500 max-w-xl mx-auto">We serve these primary locations and surrounding areas throughout Southern New Hampshire. Don't see your town? Give us a call — we likely cover it.</p>
+        </div>
+
+        <!-- Primary Towns — Core -->
+        <div class="mb-8">
+          <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4 flex items-center gap-2">
+            <span class="material-symbols-outlined icon-fill text-royal text-sm">star</span> Core Service Area
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            <div class="town-card bg-white border-2 border-chrome rounded-lg p-4 flex items-center gap-3 cursor-pointer" onclick="location.href='contact.html'">
+              <span class="material-symbols-outlined icon-fill text-royal text-xl">check_circle</span>
+              <div>
+                <p class="font-bold text-gray-900 text-sm">Derry</p>
+                <p class="text-gray-400 text-xs">HQ Location</p>
+              </div>
+            </div>
+            <div class="town-card bg-white border-2 border-chrome rounded-lg p-4 flex items-center gap-3 cursor-pointer" onclick="location.href='contact.html'">
+              <span class="material-symbols-outlined icon-fill text-royal text-xl">check_circle</span>
+              <div>
+                <p class="font-bold text-gray-900 text-sm">Londonderry</p>
+                <p class="text-gray-400 text-xs">Primary Area</p>
+              </div>
+            </div>
+            <div class="town-card bg-white border-2 border-chrome rounded-lg p-4 flex items-center gap-3 cursor-pointer" onclick="location.href='contact.html'">
+              <span class="material-symbols-outlined icon-fill text-royal text-xl">check_circle</span>
+              <div>
+                <p class="font-bold text-gray-900 text-sm">Windham</p>
+                <p class="text-gray-400 text-xs">Primary Area</p>
+              </div>
+            </div>
+            <div class="town-card bg-white border-2 border-chrome rounded-lg p-4 flex items-center gap-3 cursor-pointer" onclick="location.href='contact.html'">
+              <span class="material-symbols-outlined icon-fill text-royal text-xl">check_circle</span>
+              <div>
+                <p class="font-bold text-gray-900 text-sm">Salem</p>
+                <p class="text-gray-400 text-xs">Primary Area</p>
+              </div>
+            </div>
+            <div class="town-card bg-white border-2 border-chrome rounded-lg p-4 flex items-center gap-3 cursor-pointer" onclick="location.href='contact.html'">
+              <span class="material-symbols-outlined icon-fill text-royal text-xl">check_circle</span>
+              <div>
+                <p class="font-bold text-gray-900 text-sm">Pelham</p>
+                <p class="text-gray-400 text-xs">Primary Area</p>
+              </div>
+            </div>
+            <div class="town-card bg-white border-2 border-chrome rounded-lg p-4 flex items-center gap-3 cursor-pointer" onclick="location.href='contact.html'">
+              <span class="material-symbols-outlined icon-fill text-royal text-xl">check_circle</span>
+              <div>
+                <p class="font-bold text-gray-900 text-sm">Hudson</p>
+                <p class="text-gray-400 text-xs">Primary Area</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Extended Service -->
+        <div class="mb-8">
+          <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4 flex items-center gap-2">
+            <span class="material-symbols-outlined icon-fill text-cobalt text-sm">check_circle</span> Extended Service Area
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            <div class="town-card bg-frost border border-chrome rounded-lg p-4 flex items-center gap-3 cursor-pointer" onclick="location.href='contact.html'">
+              <span class="material-symbols-outlined icon-fill text-cobalt text-lg">check_circle</span>
+              <p class="font-semibold text-gray-700 text-sm">Nashua</p>
+            </div>
+            <div class="town-card bg-frost border border-chrome rounded-lg p-4 flex items-center gap-3 cursor-pointer" onclick="location.href='contact.html'">
+              <span class="material-symbols-outlined icon-fill text-cobalt text-lg">check_circle</span>
+              <p class="font-semibold text-gray-700 text-sm">Manchester</p>
+            </div>
+            <div class="town-card bg-frost border border-chrome rounded-lg p-4 flex items-center gap-3 cursor-pointer" onclick="location.href='contact.html'">
+              <span class="material-symbols-outlined icon-fill text-cobalt text-lg">check_circle</span>
+              <p class="font-semibold text-gray-700 text-sm">Bedford</p>
+            </div>
+            <div class="town-card bg-frost border border-chrome rounded-lg p-4 flex items-center gap-3 cursor-pointer" onclick="location.href='contact.html'">
+              <span class="material-symbols-outlined icon-fill text-cobalt text-lg">check_circle</span>
+              <p class="font-semibold text-gray-700 text-sm">Goffstown</p>
+            </div>
+            <div class="town-card bg-frost border border-chrome rounded-lg p-4 flex items-center gap-3 cursor-pointer" onclick="location.href='contact.html'">
+              <span class="material-symbols-outlined icon-fill text-cobalt text-lg">check_circle</span>
+              <p class="font-semibold text-gray-700 text-sm">Merrimack</p>
+            </div>
+            <div class="town-card bg-frost border border-chrome rounded-lg p-4 flex items-center gap-3 cursor-pointer" onclick="location.href='contact.html'">
+              <span class="material-symbols-outlined icon-fill text-cobalt text-lg">check_circle</span>
+              <p class="font-semibold text-gray-700 text-sm">Amherst</p>
+            </div>
+            <div class="town-card bg-frost border border-chrome rounded-lg p-4 flex items-center gap-3 cursor-pointer" onclick="location.href='contact.html'">
+              <span class="material-symbols-outlined icon-fill text-cobalt text-lg">check_circle</span>
+              <p class="font-semibold text-gray-700 text-sm">Milford</p>
+            </div>
+            <div class="town-card bg-frost border border-chrome rounded-lg p-4 flex items-center gap-3 cursor-pointer" onclick="location.href='contact.html'">
+              <span class="material-symbols-outlined icon-fill text-cobalt text-lg">check_circle</span>
+              <p class="font-semibold text-gray-700 text-sm">Atkinson</p>
+            </div>
+            <div class="town-card bg-frost border border-chrome rounded-lg p-4 flex items-center gap-3 cursor-pointer" onclick="location.href='contact.html'">
+              <span class="material-symbols-outlined icon-fill text-cobalt text-lg">check_circle</span>
+              <p class="font-semibold text-gray-700 text-sm">Hampstead</p>
+            </div>
+            <div class="town-card bg-frost border border-chrome rounded-lg p-4 flex items-center gap-3 cursor-pointer" onclick="location.href='contact.html'">
+              <span class="material-symbols-outlined icon-fill text-cobalt text-lg">check_circle</span>
+              <p class="font-semibold text-gray-700 text-sm">Sandown</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Info Box -->
+        <div class="bg-ice border border-chrome rounded-xl p-6 flex flex-col md:flex-row items-start md:items-center gap-5">
+          <span class="material-symbols-outlined icon-fill text-3xl text-royal flex-shrink-0">info</span>
+          <div>
+            <p class="font-bold text-gray-900 mb-1">Don't see your town listed?</p>
+            <p class="text-gray-500 text-sm">We often travel beyond these boundaries for larger projects. Give us a call at <a href="tel:6033395846" class="text-royal font-bold hover:underline">(603) 339-5846</a> or <a href="contact.html" class="text-royal font-bold hover:underline">submit a request</a> and we'll confirm availability for your area.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOBILE SHOWROOM -->
+    <section class="py-20 bg-frost">
+      <div class="max-w-[1280px] mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="bg-navy rounded-2xl p-10 text-white relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-48 h-48 bg-cobalt/20 rounded-full -translate-y-16 translate-x-16"></div>
+            <div class="absolute bottom-0 left-0 w-32 h-32 bg-royal/30 rounded-full translate-y-8 -translate-x-8"></div>
+            <div class="relative z-10">
+              <span class="material-symbols-outlined icon-fill text-4xl text-silver mb-4">local_shipping</span>
+              <h3 class="font-black text-white text-2xl mb-4" style="font-family: Montserrat;">We Bring the Showroom to You</h3>
+              <p class="text-chrome text-sm leading-relaxed mb-6">No driving to a store. No pressure from a salesperson. We arrive at your home with an extensive selection of samples — hardwood, LVP, tile, carpet — and help you choose what looks best in your actual lighting and space.</p>
+              <a href="contact.html" class="inline-flex items-center gap-2 bg-white text-royal font-bold px-6 py-3 rounded hover:bg-ice transition-colors text-sm">
+                Schedule a Home Visit <span class="material-symbols-outlined text-base">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+          <div class="space-y-5">
+            <h2 class="text-gray-900 font-black text-3xl" style="font-family: Montserrat;">How Our Process Works</h2>
+            <div class="section-divider"></div>
+            <div class="flex gap-4 items-start">
+              <div class="w-8 h-8 bg-royal rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-white font-black text-sm" style="font-family: Montserrat;">1</div>
+              <div>
+                <h4 class="font-bold text-gray-900 mb-1">Contact Us</h4>
+                <p class="text-gray-500 text-sm">Call, email, or submit our online form. Tell us about your project and your timeline.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="w-8 h-8 bg-royal rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-white font-black text-sm" style="font-family: Montserrat;">2</div>
+              <div>
+                <h4 class="font-bold text-gray-900 mb-1">Free In-Home Estimate</h4>
+                <p class="text-gray-500 text-sm">We visit your home, measure the space, and bring samples. You get a written, itemized quote on the spot.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="w-8 h-8 bg-royal rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-white font-black text-sm" style="font-family: Montserrat;">3</div>
+              <div>
+                <h4 class="font-bold text-gray-900 mb-1">Schedule &amp; Install</h4>
+                <p class="text-gray-500 text-sm">We order materials, prep your space, and complete the installation professionally and on schedule.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="w-8 h-8 bg-royal rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-white font-black text-sm" style="font-family: Montserrat;">4</div>
+              <div>
+                <h4 class="font-bold text-gray-900 mb-1">Enjoy Your New Floors</h4>
+                <p class="text-gray-500 text-sm">We walk through everything together, answer questions, and leave you with care instructions. Backed by our craftsmanship guarantee.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-navy">
+      <div class="max-w-[1280px] mx-auto px-6 text-center">
+        <h2 class="text-white font-black text-3xl md:text-4xl mb-4" style="font-family: Montserrat;">Ready to Transform Your Floors?</h2>
+        <p class="text-silver text-lg mb-10 max-w-xl mx-auto">Schedule your free in-home consultation today. We come to you anywhere in Southern NH.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="contact.html" class="bg-white text-royal font-bold px-10 py-4 rounded text-base hover:bg-ice transition-colors">
+            Book Free Consultation
+          </a>
+          <a href="tel:6033395846" class="border-2 border-white/40 text-white font-bold px-10 py-4 rounded text-base hover:bg-white/10 transition-colors flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined icon-fill">call</span>(603) 339-5846
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy text-white pt-16 pb-8">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        <div class="md:col-span-2">
+          <img src="logo.png" alt="All About Flooring NH" class="h-16 w-auto mb-5">
+          <p class="text-silver text-sm leading-relaxed mb-5 max-w-xs">Southern New Hampshire's premier flooring contractor. Based in Derry — serving greater Manchester and beyond since 2010.</p>
+          <a href="tel:6033395846" class="flex items-center gap-2 text-chrome font-semibold hover:text-white transition-colors">
+            <span class="material-symbols-outlined icon-fill text-lg text-silver">call</span>
+            (603) 339-5846
+          </a>
+        </div>
+        <div>
+          <h4 class="font-bold text-white text-xs uppercase tracking-widest mb-5">Services</h4>
+          <ul class="space-y-3">
+            <li><a href="contact.html" class="text-silver text-sm hover:text-white transition-colors">Hardwood Installation</a></li>
+            <li><a href="contact.html" class="text-silver text-sm hover:text-white transition-colors">Tile &amp; Stone</a></li>
+            <li><a href="contact.html" class="text-silver text-sm hover:text-white transition-colors">Luxury Vinyl (LVP)</a></li>
+            <li><a href="contact.html" class="text-silver text-sm hover:text-white transition-colors">Carpet</a></li>
+            <li><a href="contact.html" class="text-silver text-sm hover:text-white transition-colors">Floor Refinishing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-white text-xs uppercase tracking-widest mb-5">Company</h4>
+          <ul class="space-y-3">
+            <li><a href="reviews.html" class="text-silver text-sm hover:text-white transition-colors">Customer Reviews</a></li>
+            <li><a href="service-area.html" class="text-silver text-sm hover:text-white transition-colors">Service Area</a></li>
+            <li><a href="contact.html" class="text-silver text-sm hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
+        <p class="text-silver text-xs">© 2025 All About Flooring, LLC. Licensed &amp; Insured. All Rights Reserved.</p>
+        <p class="text-silver text-xs">Derry, NH · Serving Southern New Hampshire</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
